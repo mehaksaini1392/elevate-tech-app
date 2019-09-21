@@ -1,1 +1,0 @@
-# elevate-tech-app
