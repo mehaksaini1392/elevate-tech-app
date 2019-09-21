@@ -41,7 +41,7 @@ export class ChannelService {
 
   removeChannelFromCart(channelId) {
     const indexToRemove = R.findIndex(R.propEq('ttCode', channelId))(this.shoppingCart);
-    this.shoppingCart = this.shoppingCart.slice(indexToRemove, 1);
+    this.shoppingCart.splice(indexToRemove, 1);
   }
 
 }

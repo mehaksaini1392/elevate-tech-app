@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Channel } from 'src/app/models/channel.model';
+import { ChannelService } from 'src/app/services/channel.service';
 
 @Component({
   selector: 'app-channel-tile',
@@ -11,9 +12,12 @@ export class ChannelTileComponent implements OnInit {
   @Output() cardTitleEmit = new EventEmitter();
   channelName = "";
   channelLink = "";
-  iFPurchased: boolean = true;
+  addedToCart: boolean = true;
+  
 
-  constructor() { }
+  constructor(
+    private channelService: ChannelService
+  ) { }
 
   ngOnInit() {
     this.channelName = (this.channelData.name +' - '+ this.channelData.description).substr(0, 20) + '...';
@@ -21,9 +25,15 @@ export class ChannelTileComponent implements OnInit {
 
    // this.cardMainTitle = `${this.cardMainTitle.substr(0, 50)}...`;
   }
-
   purchase(){
-    this.iFPurchased = !this.iFPurchased;
+    this.addedToCart = !this.addedToCart;
+    //Add to Cart
+    if(!this.addedToCart){
+      this.channelService.addChannelToCart(this.channelData.ttCode);
+    }else{
+      //Remove from Cart
+      this.channelService.removeChannelFromCart(this.channelData.ttCode);
+    }
   }
 
   emitModalData(){
