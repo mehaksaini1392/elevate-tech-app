@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchResultComponent } from './states/search-result/search-result.component';
 import { AppComponent } from './app.component';
 import { ChannelsResolver } from './resolver/app.resolvers';
+import { ReviewOrderComponent } from './states/review-order/review-order.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
     resolve: [
       ChannelsResolver
     ]
+  },
+  {
+    path: 'review-order',
+    component: ReviewOrderComponent
   },
   {
     path: '',

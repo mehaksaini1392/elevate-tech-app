@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Channel } from 'src/app/models/channel.model';
 
 @Component({
   selector: 'app-channel-tile',
@@ -6,19 +7,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./channel-tile.component.scss']
 })
 export class ChannelTileComponent implements OnInit {
-  @Input() channelData;
+  @Input() channelData:Channel;
   @Output() cardTitleEmit = new EventEmitter();
-  @Input() cardImage='cardChannel';
-  @Input() cardMainTitle ='Toronto New | Breaking News Headlines...';
-  @Input() cardLinkTitle='CP24 - Toronto News'
-  @Input() cardTitle='CP24';
-  @Input() cardInfo='CP24 is a Canadian English language discretionary service news channel that is owned by Bell Media, a subsidiary of BCE Inc., the channel focuses on local news from the Greater Toronto Area and Southern Ontario, while also covering national and international news.';
+  channelName = "";
+  channelLink = "";
   iFPurchased: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
-    this.cardLinkTitle = this.cardTitle + ' - click for more info...';
+    this.channelName = this.channelData.name +'-'+ this.channelData.description.substr(0, 20) + '...';
+    this.channelLink = this.channelName + ' - click for more info...';
    
    // this.cardMainTitle = `${this.cardMainTitle.substr(0, 50)}...`;
   }
@@ -28,7 +27,7 @@ export class ChannelTileComponent implements OnInit {
   }
 
   emitModalData(){
-    this.cardTitleEmit.emit(this.cardTitle);
+    this.cardTitleEmit.emit(this.channelData);
   }
 
 }

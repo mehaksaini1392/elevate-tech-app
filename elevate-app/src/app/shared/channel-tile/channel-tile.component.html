@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="assets/images/logos/{{cardImage}}">
+    <img class="activator" src="assets/images/logos/{{channelData.ttCode+'.png'}}">
     <div (click)="purchase()" >
       <a class="btn-floating halfway-fab waves-effect waves-light red" [ngClass]="{ 'red': iFPurchased, 'green': !iFPurchased }">
         <i class="material-icons" *ngIf="iFPurchased">add_shopping_cart</i>
@@ -8,12 +8,12 @@
     </div>
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4 truncate">{{cardMainTitle}}<i class="material-icons right modal-trigger" data-target="modal1">more_vert</i></span>
-    <p><a data-target="modal1" class="btn modal-trigger" (click)="emitModalData()">{{cardLinkTitle}}</a></p>
+    <span class="card-title activator grey-text text-darken-4">{{channelName}}<i class="material-icons right modal-trigger" data-target="modal1">more_vert</i></span>
+    <p><a data-target="modal1" class="btn modal-trigger" (click)="emitModalData()">{{channelLink}}</a></p>
   </div>
   <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">{{cardTitle}}<i class="material-icons right">close</i></span>
-    <p >{{cardInfo}}</p>
+    <span class="card-title grey-text text-darken-4">{{channelData?.name}}<i class="material-icons right">close</i></span>
+    <p >{{channelData?.description}}</p>
   </div>
 </div>
 
