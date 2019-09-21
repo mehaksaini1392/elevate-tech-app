@@ -11,7 +11,7 @@ export class ModalComponent implements OnInit, AfterViewInit {
   modalId:String;
   instanceofModal;
   ngAfterViewInit(): void {
-    var modal = document.getElementById('rogersModal');
+    var modal = document.getElementById('channelInfoModal');
     this.instanceofModal = M.Modal.init(modal);
   }
 
