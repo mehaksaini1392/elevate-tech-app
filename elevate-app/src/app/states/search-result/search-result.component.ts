@@ -9,10 +9,17 @@ import { ChannelService } from 'src/app/services/channel.service';
 })
 export class SearchResultComponent implements OnInit {
   allChannels: Channel[];
+  channelDataForModal;
+  modalInstance;
   constructor(private channelService: ChannelService) { }
 
   ngOnInit() {
     this.allChannels = this.channelService.getAllChannels();
   }
+  receiveData(data){
+    this.channelDataForModal = data;
+
+  }
+  
 
 }

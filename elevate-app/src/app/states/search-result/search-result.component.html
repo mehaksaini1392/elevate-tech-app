@@ -1,11 +1,12 @@
 <app-search-box></app-search-box>
 <div class="row">
   <div *ngFor="let channel of allChannels" class="col l3">
-      <app-channel-tile cardMainTitle="{{channel?.name + ' - ' + channel?.description}}"
+      <app-channel-tile (cardTitleEmit)="receiveData($event)" [channelData]="channel" cardMainTitle="{{channel?.name + ' - ' + channel?.description}}"
        [cardInfo]="channel?.description"
        cardImage="{{channel?.ttCode + '.png'}}"
        [cardTitle]= "channel?.name" ></app-channel-tile>
   </div>
 
 </div>
+<app-modal [channelData]="channelDataForModal" ></app-modal>
 

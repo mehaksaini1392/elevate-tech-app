@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-channel-tile',
@@ -6,6 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./channel-tile.component.scss']
 })
 export class ChannelTileComponent implements OnInit {
+  @Input() channelData;
+  @Output() cardTitleEmit = new EventEmitter();
   @Input() cardImage='cardChannel';
   @Input() cardMainTitle ='Toronto New | Breaking News Headlines...';
   @Input() cardLinkTitle='CP24 - Toronto News'
@@ -17,11 +19,16 @@ export class ChannelTileComponent implements OnInit {
 
   ngOnInit() {
     this.cardLinkTitle = this.cardTitle + ' - click for more info...';
+   
    // this.cardMainTitle = `${this.cardMainTitle.substr(0, 50)}...`;
   }
 
   purchase(){
     this.iFPurchased = !this.iFPurchased;
+  }
+
+  emitModalData(){
+    this.cardTitleEmit.emit(this.cardTitle);
   }
 
 }
