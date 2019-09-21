@@ -16,6 +16,7 @@ export class ChannelTileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.cardMainTitle = this.cardTitle + ' ' + this.cardInfo.substr(0, 20) + '...';
     this.cardLinkTitle = this.cardTitle + ' - click for more info...';
    // this.cardMainTitle = `${this.cardMainTitle.substr(0, 50)}...`;
   }
