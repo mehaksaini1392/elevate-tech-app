@@ -1,13 +1,18 @@
 <div class="card">
   <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="assets/images/{{cardImage}}.jpg">
+    <img class="activator" src="assets/images/logos/{{cardImage}}">
+    <div (click)="purchase()" >
+      <a class="btn-floating halfway-fab waves-effect waves-light red" [ngClass]="{ 'red': ifPurchaseed, 'green': !ifPurchaseed }">
+        <i class="material-icons" *ngIf="iFPurchased">add_shopping_cart</i>
+        <i class="material-icons" *ngIf="!iFPurchased">check</i></a>
+    </div>
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">{{cardMainTitle}}<i class="material-icons right">{{moreTitle}}</i></span>
+    <span class="card-title activator grey-text text-darken-4 truncate">{{cardMainTitle}}<i class="material-icons right">more_vert</i></span>
     <p><a href="#">{{cardLinkTitle}}</a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">{{cardTitle}}<i class="material-icons right">close</i></span>
-    <p>{{cardInfo}}</p>
+    <p >{{cardInfo}}</p>
   </div>
 </div>

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BaseModule } from './base/base.module';
 import { SharedModule } from './shared/share.module';
 import { StateModule } from './states/state.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,7 @@ import { StateModule } from './states/state.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     StateModule,
     BaseModule
   ],
