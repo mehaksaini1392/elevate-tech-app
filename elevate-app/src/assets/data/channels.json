@@ -101,6 +101,7 @@
     "channelType": ["HD"],
     "isSVOD": false,
     "programLanguages": ["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=A7hkvdyG8x4",
     "topTVShows":[
       {
         "name":"Sweet November",
@@ -109,6 +110,10 @@
       {
         "name":"Under Fire",
         "image":"http://www.gstatic.com/tv/thumb/v22vodart/7594/p7594_v_v8_aa.jpg"
+      },
+      {
+        "name":"The Danish Girl",
+        "image":"https://m.media-amazon.com/images/M/MV5BMjA0NjA4NjE2Nl5BMl5BanBnXkFtZTgwNzIxNTY2NjE@._V1_.jpg"
       }
     ]
   },
@@ -122,7 +127,21 @@
     "channelType": ["HD"],
     "isSVOD": false,
     "programLanguages": ["it"],
-    "topTVShows":[]
+    "teaserVideo":"https://www.youtube.com/watch?v=H2Fh_rkeJUg",
+    "topTVShows":[
+      {
+        "name":"Reazione A Catena",
+        "image":"https://www.studiogiochi.com/files/studiogiochi.com/2019/06/RAC-2019.jpg"
+      },
+      {
+        "name":"L'Italia con voi",
+        "image":"https://pbs.twimg.com/media/DoC4paoXgAUNbTL.jpg"
+      },
+      {
+        "name":"Tutta Salute",
+        "image":"https://i2.wp.com/www.la-notizia.net/wp-content/uploads/2019/04/TUTTA-Salute.jpg?fit=930%2C610&ssl=1"
+      }
+    ]
   },
   {
     "ttCode": "TT_PTC_Punjabi_Canada",
@@ -134,7 +153,21 @@
     "channelType": ["SD"],
     "isSVOD": false,
     "programLanguages": ["pa"],
-    "topTVShows":[]
+    "teaserVideo":"https://www.youtube.com/watch?v=0ARRGIpMtpE",
+    "topTVShows":[
+      {
+        "name":"Punjab De SuperChef",
+        "image":"https://www.studiogiochi.com/files/studiogiochi.com/2019/06/RAC-2019.jpg"
+      },
+      {
+        "name":"Vichar Taqrar",
+        "image":"hhttp://imagesyupptv.whatsonindia.com/dasimages/landscape/360x270/D2423551FF183A0D7FAA636DF7DC2C0C5AF0E78AK.jpg"
+      },
+      {
+        "name":"IKK Kahaani",
+        "image":"hhttp://imagesyupptv.whatsonindia.com/dasimages/landscape/360x270/D2423551FF183A0D7FAA636DF7DC2C0C5AF0E78AK.jpg"
+      }
+    ]
   },
   {
     "ttCode": "TT_Much",
@@ -148,7 +181,28 @@
     ],
     "isSVOD": false,
     "programLanguages":["en"],
-    "topTVShows":[]
+    "teaserVideo":"https://www.youtube.com/watch?v=i6dWSHTrNkA",
+    "topTVShows":[
+      {"name":"South Park",
+        "image": "https://www.much.com/wp-content/uploads/2015/05/featured-south-park1-770x433.jpg"
+        },
+        {
+        "name":"South Side",
+        "image":"https://www.much.com/wp-content/uploads/2019/07/SouthSide-feat-768x432.jpg"
+        },
+        {
+        "name":"American Dad",
+        "image":"https://www.much.com/wp-content/uploads/2016/01/3AmericanDad_09_v1F-1450x816.jpg"
+        },
+        {
+        "name":"Simpsons",
+        "image":"https://www.much.com/wp-content/uploads/2015/05/featured-thesimpsons-479x269.jpg"
+        },
+        {
+        "name":"Chappelle's Show",
+        "image":"https://www.much.com/wp-content/uploads/2019/04/ChappelleShow-header-479x269.jpg"
+        }
+    ]
   },
   {
     "ttCode": "TT_CNN_Cable_News_Network",
@@ -162,7 +216,21 @@
     ],
     "isSVOD": false,
     "programLanguages":["en"],
-    "topTVShows":[]
+    "teaserVideo":"https://www.youtube.com/watch?v=MnR9AVs6Q_c",
+    "topTVShows":[
+      {
+        "name":"Cuomo Prime Time",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/14495044/p14495044_b_v8_ad.jpg"
+      },
+      {
+        "name":"United Shades of America",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/16796390/p16796390_b_v8_aa.jpg"
+      },
+      {
+        "name":"Inside Politics",
+        "image":"http://static.tvgcdn.net/feed/1/177/115080177.jpg"
+      }
+    ]
   },
   {
     "ttCode": "TT_Food_Network",
@@ -176,7 +244,27 @@
     ],
     "isSVOD": false,
     "programLanguages":["en"],
-    "topTVShows":[]
+    "teaserVideo":"https://www.youtube.com/watch?v=s7VvEftvRwM",
+    "topTVShows":[
+      {"name":"Chopped",
+      "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/24/0/CQ4009_Judges_s4x3.jpg.rend.hgtvcom.476.357.suffix/1537821061129.jpeg"
+      },
+      {
+      "name":"Diners, Drive-Ins and Dives",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/21/0/DV2818_wings.jpg.rend.hgtvcom.476.357.suffix/1537798591284.jpeg"
+      },
+      {
+      "name":"Guy's Grocery Games",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/6/28/GK2012_contestants.jpg.rend.hgtvcom.476.357.suffix/1561993559786.jpeg"
+      },
+      {
+      "name":"The Pioneer Woman",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/2/0/WU2110_Ree-Drummond.jpg.rend.hgtvcom.406.305.suffix/1554749573599.jpeg"
+      },
+      {
+      "name":"Good Eats",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/5/17/0/AXON_Alton-Brown-Good-Eats-02-Horz_s4x3.jpg.rend.hgtvcom.266.200.suffix/1371615990804.jpeg"
+      }]
   },
   {
     "ttCode": "TT_CTV_News_Channel",
