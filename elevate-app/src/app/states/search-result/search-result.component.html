@@ -1,4 +1,4 @@
-<app-search-box></app-search-box>
+<app-search-box (searchResult)="searchResult($event)"></app-search-box>
 <div class="row">
   <div *ngFor="let channel of allChannels" class="col l3">
       <app-channel-tile cardMainTitle="{{channel?.name + ' - ' + channel?.description}}"
