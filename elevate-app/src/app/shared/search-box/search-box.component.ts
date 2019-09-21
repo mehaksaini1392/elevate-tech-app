@@ -14,7 +14,7 @@ export class SearchBoxComponent implements OnInit {
 
   ngOnInit() {}
 
-  generateSearchResult() {
+  generateSearchResult(event) {
     if (this.searchText && this.searchText.length > 1) {
       const results: Channel[] = this.channelService.getChannelsFilteredByName(
         this.searchText
