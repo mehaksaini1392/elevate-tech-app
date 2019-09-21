@@ -15,8 +15,7 @@ import { StateModule } from './states/state.module';
     BrowserModule,
     AppRoutingModule,
     StateModule,
-    BaseModule,
-    SharedModule
+    BaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
