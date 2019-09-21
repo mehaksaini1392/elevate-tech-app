@@ -1,0 +1,39 @@
+{
+    "channels": 
+    [
+    
+    {
+      "channelPrice": "7.0",
+      "ttCode": "TT_CP24",
+      "isTBS": false,
+      "cliccId": "94289",
+      "nameEn": "CP24",
+      "genreEn": "News",
+      "descriptionEn": "We're CP24 - Canada's first and only 24-hour local news channel. Simultaneous with a \"regular\", full-motion newscast, CP24 screens perpetually update \"information at a glance\", showing the date, time, immediate weather conditions, the day's forecast, a \"Four-Day\" synopsis, current traffic flow from 118 Live highway cams, newswire headlines, a sports ticker, stock market quotes and the status of key exchange indices.",
+      "channelType": [
+        "HD"
+      ],
+      "isSVOD": false
+    },
+    {
+        "channelPrice": "7.0",
+        "ttCode": "TT_YTV",
+        "isTBS": false,
+        "cliccId": "70827",
+        "nameEn": "YTV",
+        "genreEn": "Family",
+        "maestroId": "503676296",
+        "channelId": "sku360758",
+        "descriptionEn": "If a show is awesome-er than bubble wrap and more captivating than cat videos - chances are it's on YTV! Featuring hilarious animated comedies, blockbuster movies, top-rated live action sitcoms and the #1 after- school  block, The Zone; YTV is the ultimate headquarters for kids and their families! Also available in HD and On Demand.",
+        "channelNumbers": [
+          "202",
+          "25"
+        ],
+        "channelType": [
+          "HD"
+        ],
+        "isSVOD": false
+    }
+]
+
+  }
