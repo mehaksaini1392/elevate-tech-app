@@ -11,7 +11,7 @@ export class ChannelTileComponent implements OnInit {
   @Input() cardLinkTitle='CP24 - Toronto News'
   @Input() cardTitle='CP24';
   @Input() cardInfo='CP24 is a Canadian English language discretionary service news channel that is owned by Bell Media, a subsidiary of BCE Inc., the channel focuses on local news from the Greater Toronto Area and Southern Ontario, while also covering national and international news.';
-  ifPurchaseed: boolean = true;
+  iFPurchased: boolean = true;
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class ChannelTileComponent implements OnInit {
   }
 
   purchase(){
-    this.ifPurchaseed = !this.ifPurchaseed;
+    this.iFPurchased = !this.iFPurchased;
   }
 
 }

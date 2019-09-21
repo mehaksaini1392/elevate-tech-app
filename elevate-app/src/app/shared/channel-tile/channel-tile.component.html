@@ -1,10 +1,10 @@
 <div class="card">
   <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="assets/images/{{cardImage}}.jpg">
+    <img class="activator" src="assets/images/logos/{{cardImage}}">
     <div (click)="purchase()" >
       <a class="btn-floating halfway-fab waves-effect waves-light red" [ngClass]="{ 'red': ifPurchaseed, 'green': !ifPurchaseed }">
-        <i class="material-icons" *ngIf="ifPurchaseed">add_shopping_cart</i>
-        <i class="material-icons" *ngIf="!ifPurchaseed">check</i></a>
+        <i class="material-icons" *ngIf="iFPurchased">add_shopping_cart</i>
+        <i class="material-icons" *ngIf="!iFPurchased">check</i></a>
     </div>
   </div>
   <div class="card-content">
