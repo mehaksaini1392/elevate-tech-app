@@ -4,6 +4,7 @@
     
     {
       "ttCode": "TT_CP24",
+      "channelPrice":7,
       "isTBS": false,
       "name": "CP24",
       "genre": ["News"],
@@ -11,10 +12,12 @@
       "channelType": [
         "HD"
       ],
-      "isSVOD": false
+      "isSVOD": false,
+      "programLanguages":["en"]
     },
     {
         "ttCode": "TT_YTV",
+        "channelPrice":7,
         "isTBS": false,
         "name": "YTV",
         "genre": ["Family","Kids"],
@@ -22,10 +25,12 @@
         "channelType": [
           "HD"
         ],
-        "isSVOD": false
+        "isSVOD": false,
+        "programLanguages":["en"]
     },
     {
       "ttCode": "TT_ESPN_Classic_Canada",
+      "channelPrice":4,
       "isTBS": false,
       "name": "ESPN Classic Canada",
       "genre": ["Sports"],
@@ -33,11 +38,13 @@
       "channelType": [
         "SD"
       ],
-      "isSVOD": false
+      "isSVOD": false,
+      "programLanguages":["en"]
      
     },
     {
       "ttCode": "TT_Movietime",
+      "channelPrice":4,
       "isTBS": false,
       "name": "MovieTime",
       "genre": ["Movies"],
@@ -46,8 +53,34 @@
       "channelType": [
         "HD"
       ],
-      "isSVOD": false
+      "isSVOD": false,
+      "programLanguages":["en"]
+    },
+    {
+      "ttCode": "TT_RAI_italia_14",
+      "channelPrice":5.99,
+      "isTBS": false,
+      "name": "RAI italia",
+      "genre": ["Multicultural"],
+      "description": "RAI italia provides 24 hours of top-quality entertainment every day, live from Italy. Enjoy hours of Italian and European soccer, live news, mini-series, movies, children's cartoons and much more.<br><br>Must be ordered with TLN to satisfy CRTC linkage requirements.",
+      "channelType": [
+        "HD"
+      ],
+      "isSVOD": false,
+      "programLanguages":["it"]
+    },
+    {
+      "ttCode": "TT_PTC_Punjabi_Canada",
+      "channelPrice": 5,
+      "isTBS": false,
+      "name": "PTC Punjabi Canada",
+      "genre": "Multicultural",
+      "description": "PTC Punjabi Canada is a premium quality Punjabi television channel with high caliber Punjabi programs including religious, entertainment, breaking news, current affairs, music and live mega events from Punjab and local programs from Canada. Rated as the #1 Punjabi channel today, PTC Punjabi is a household name in Punjab (India), the U.S., and other parts of the world, connecting viewers to Punjab and the Punjabi community worldwide.",
+      "channelType": [
+        "SD"
+      ],
+      "isSVOD": false,
+      "programLanguages":["pa"]   
     }
 ]
-
   }
