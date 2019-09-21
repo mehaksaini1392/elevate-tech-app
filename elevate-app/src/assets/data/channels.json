@@ -65,5 +65,58 @@
     "channelType": ["SD"],
     "isSVOD": false,
     "programLanguages": ["pa"]
+  },
+  {
+    "ttCode": "TT_Much",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "Much",
+    "genre": ["Music"],
+    "description": "MuchMusic is dedicated to music-related programs, pop and youth culture.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"]
+  },
+  {
+    "ttCode": "TT_CNN_Cable_News_Network",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "CNN",
+    "genre": ["News"],
+    "description": "CNN delivers the latest breaking news and information on the latest top stories, weather, business, entertainment, politics, and more.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"]
+  },
+  {
+    "ttCode": "TT_Food_Network",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "Food Network",
+    "genre": ["Lifestyle"],
+    "description": "Food Network brings iconic characters together through inspiring food stories. From engaging, passionate chefs to dramatic culinary competitions and behind the scenes access to the food industry, Food Network serves up an appetizing schedule of programs from Canada and around the world.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"]
+  },
+  {
+    "ttCode": "TT_CTV_News_Channel",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "CTV News Channel",
+    "genre": ["News"],
+    "description": "CTV News Channel HD broadcasts news headlines, breaking news, and information on a 24 hour schedule.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"]
+  
   }
 ]
