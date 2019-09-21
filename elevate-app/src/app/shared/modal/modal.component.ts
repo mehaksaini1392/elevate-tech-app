@@ -1,14 +1,14 @@
-import { Component, OnInit, Input, AfterViewInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, Output, EventEmitter, OnChanges } from '@angular/core';
 import * as M from 'materialize-css';
+import { Channel } from 'src/app/models/channel.model';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss']
 })
-export class ModalComponent implements OnInit, AfterViewInit {
-  @Input() channelData;
-  @Output() instanceEmit = new EventEmitter();
-  modalId:String;
+export class ModalComponent implements OnInit, AfterViewInit, OnChanges {
+  @Input() channelData: Channel;
+  modalId:string;
   instanceofModal;
   ngAfterViewInit(): void {
     var modal = document.getElementById('channelInfoModal');
@@ -18,7 +18,11 @@ export class ModalComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
-    this.instanceEmit.emit(this.instanceofModal);
+
+  }
+
+  ngOnChanges(): void {
+    console.log(this.channelData);
   }
 
 

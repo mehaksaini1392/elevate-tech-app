@@ -15,6 +15,7 @@ export class SearchResultComponent implements OnInit {
   ngOnInit() {
     this.allChannels = this.channelService.getAllChannels();
   }
+
   receiveData(data) {
     this.channelDataForModal = data;
   }
