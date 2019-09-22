@@ -13,7 +13,8 @@ export class ChannelTileComponent implements OnInit {
   channelName = "";
   channelLink = "";
   addedToCart: boolean = true;
-  
+  hoverEffect = '';
+
 
   constructor(
     private channelService: ChannelService

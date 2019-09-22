@@ -7,7 +7,7 @@ import { ChannelService } from 'src/app/services/channel.service';
   styleUrls: ['./confirmation.component.scss']
 })
 export class ConfirmationComponent implements OnInit {
-  private customizedPackage=[];
+  customizedPackage=[];
   constructor(private channelService: ChannelService) { }
 
   ngOnInit() {
