@@ -1,6 +1,6 @@
-<div class="card">
+<div class="card {{hoverEffect}}" (mouseenter)="hoverEffect='z-depth-4'" (mouseleave)="hoverEffect=''">
   <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="assets/images/logos/{{channelData.ttCode+'.png'}}">
+    <img class="activator " src="assets/images/logos/{{channelData.ttCode+'.png'}}">
     <div (click)="purchase()" >
       <a class="btn-floating halfway-fab waves-effect waves-light red" [ngClass]="{ 'red': addedToCart, 'green': !addedToCart }">
         <i class="material-icons" *ngIf="addedToCart">add_shopping_cart</i>
