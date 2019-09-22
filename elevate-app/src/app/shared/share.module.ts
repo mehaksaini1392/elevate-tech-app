@@ -15,7 +15,8 @@ import { ChannelFilterComponent } from './channel-filter/channel-filter.componen
     SearchBoxComponent,
     CarouselComponent,
     ChannelTileComponent,
-    ModalComponent
+    ModalComponent,
+    ChannelFilterComponent
   ],
   declarations: [
     SearchBoxComponent,
