@@ -1,4 +1,13 @@
+<div class="row">
+    <div class="col s12 m6">
 <app-search-box (searchResult)="searchResult($event)"></app-search-box>
+</div>
+<div class="col s12 m6">
+<app-channel-filter (genre)="searchByGenre($event)" (language)="searchByLanguage($event)" [generesList]="allGeneres" [langList]="allLanguages"></app-channel-filter>
+</div>
+</div>
+
+
 <div class="row channel-tile">
   <div *ngFor="let channel of allChannels" class="col s12 m4 l3">
       <app-channel-tile (cardTitleEmit)="receiveData($event)" [channelData]="channel"></app-channel-tile>

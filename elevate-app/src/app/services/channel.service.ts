@@ -65,6 +65,13 @@ export class ChannelService {
   getMessage(): Observable<any> {
     return this.subject.asObservable();
   }
+  getAllAvailableGenres(){
+    let genres =  R.pluck('genre')(this._allChannels);
+    let flattenGenreData = R.flatten(genres);
+    let uniquegenres =  new Set(flattenGenreData);
+    console.log(new Set(flattenGenreData));
+     return uniquegenres;
+   }
   saveName(name){
     this.name=name;
   }
@@ -72,4 +79,24 @@ export class ChannelService {
     return this.name;
   }
 
+   getAllLangugues(){
+    let genres =  R.pluck('programLanguages')(this._allChannels);
+    let flattenGenreData = R.flatten(genres);
+    let uniqueLang =  new Set(flattenGenreData);
+    console.log(new Set(flattenGenreData));
+     return uniqueLang;
+
+   }
+
+   getChannelsFilteredByLanguage(searchText) {
+    return R.filter((channel: Channel) => {
+      return channel.programLanguages.indexOf(searchText) > -1;
+    }, this._allChannels);
+  }
+
+  getChannelsFilteredByGenre(searchText) {
+    return R.filter((channel: Channel) => {
+      return channel.genre.indexOf(searchText) > -1;
+    }, this._allChannels);
+  }
 }
