@@ -8,8 +8,8 @@
     </div>
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">{{channelName}}<i class="material-icons right modal-trigger" data-target="modal1">more_vert</i></span>
-    <p><a data-target="modal1" class="btn modal-trigger" (click)="emitModalData()">{{channelLink}}</a></p>
+    <span class="card-title activator grey-text text-darken-4">{{channelName}}<i class="material-icons right">more_vert</i></span>
+    <p><a data-target="channelInfoModal" class="modal-trigger" (click)="emitModalData()"> More Detail <i class="material-icons ">open_in_new</i> </a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">{{channelData?.name}}<i class="material-icons right">close</i></span>

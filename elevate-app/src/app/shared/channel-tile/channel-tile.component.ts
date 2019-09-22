@@ -20,9 +20,9 @@ export class ChannelTileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.channelName = this.channelData.name +'-'+ this.channelData.description.substr(0, 20) + '...';
-    this.channelLink = this.channelName + ' - click for more info...';
-   
+    this.channelName = (this.channelData.name +' - '+ this.channelData.description).substr(0, 20) + '...';
+    this.channelLink = this.channelData.name ;
+
    // this.cardMainTitle = `${this.cardMainTitle.substr(0, 50)}...`;
   }
   purchase(){
@@ -37,6 +37,8 @@ export class ChannelTileComponent implements OnInit {
   }
 
   emitModalData(){
+    // var elem = document.getElementById('channelInfoModal')
+    // var instance = M.Modal.getInstance(elem);
     this.cardTitleEmit.emit(this.channelData);
   }
 

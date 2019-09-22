@@ -10,7 +10,13 @@
     padding: 40px;
   }
 }
+.card {
+  background-color: #0000001f;
+}
 
 .btn-floating.halfway-fab {
   bottom: 20px !important;
+}
+.modal-trigger{
+  cursor: pointer;
 }
