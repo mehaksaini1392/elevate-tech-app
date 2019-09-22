@@ -6,8 +6,9 @@
   justify-content: center;
   img {
     width: 70%;
+    top: -15px;
     margin: 0 auto;
-    padding: 40px;
+  
   }
 }
 .card {
@@ -15,7 +16,7 @@
 }
 
 .btn-floating.halfway-fab {
-  bottom: 20px !important;
+  bottom: 2px !important;
 }
 .modal-trigger{
   cursor: pointer;
