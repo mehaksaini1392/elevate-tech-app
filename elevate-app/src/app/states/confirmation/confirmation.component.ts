@@ -11,18 +11,7 @@ export class ConfirmationComponent implements OnInit {
   constructor(private channelService: ChannelService) { }
 
   ngOnInit() {
-    this.customizedPackage=[
-    { "ttCode": "TT_CP24",
-    "channelPrice": 7},
-    { "ttCode": "TT_YTV",
-    "channelPrice": 7},{ "ttCode": "TT_CP24",
-    "channelPrice": 7},
-    { "ttCode": "TT_YTV",
-    "channelPrice": 7},{ "ttCode": "TT_CP24",
-    "channelPrice": 7},
-    { "ttCode": "TT_YTV",
-    "channelPrice": 7}];
-    //this.channelService.getShoppingCartItems();
+    this.customizedPackage=this.channelService.getShoppingCartItems();
   }
 
 
