@@ -1,0 +1,46 @@
+.tv{
+    background-image: url('https://www.trzcacak.rs/myfile/full/8-84001_monitor-png-image-television-with-blank-screen.png');
+    background-size: cover;
+    height: 516px;
+    width: 47%;
+    padding: 35px;
+}
+
+.headerTitle{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.headerDesc{
+    text-align: center;
+    font-size: 14px;
+}
+
+.banner{
+    background: #49515238;
+    .orderNum{
+        text-align: center;
+        color: darkblue;
+        font-size: 18px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+
+.tile{
+    height: 110px;
+    display: inline-block;
+    img{
+        height: 80%;
+        width: 80%;
+    }
+}
+
+.disclaimer{
+    color: grey;
+    padding: 100px;
+}

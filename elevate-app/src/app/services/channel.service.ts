@@ -48,6 +48,10 @@ export class ChannelService {
     this.sendMessage(this.shoppingCart.length)
   }
 
+  getShoppingCartItems(){
+    return this.shoppingCart;
+  }
+
   getItemsCount(){
     return this.shoppingCart.length;
   }
