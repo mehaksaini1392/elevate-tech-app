@@ -1,0 +1,17 @@
+.footer{
+    padding: 50px;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    background: #1c1c1c;
+    color: white;
+    .row{
+        display: flex;
+    }
+    .col-3{
+        padding-right: 80px;
+    }
+    .logo{
+        background-image: url('http://communityforums.rogers.com/html/assets/RogersLogo.png');
+    }
+}

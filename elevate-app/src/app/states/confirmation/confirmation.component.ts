@@ -13,7 +13,4 @@ export class ConfirmationComponent implements OnInit {
   ngOnInit() {
     this.customizedPackage=this.channelService.getShoppingCartItems();
   }
-
-
-
 }
