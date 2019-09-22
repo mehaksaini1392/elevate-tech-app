@@ -1,3 +1,25 @@
-<p>
-  review-order works!
-</p>
+
+
+<h2>Review Your Order</h2>
+<ul class="collection">
+    <li class="collection-item avatar" *ngFor="let item of selectedChannels">
+      <img src="assets/images/logos/{{item?.ttCode+'.png'}}" alt="" class="circle">
+      <span class="title">{{item?.name}}</span>
+      <p>Price: {{item?.channelPrice | currency}}
+      </p>
+      <a role="link" class="secondary-content" (click)="removeItem(item?.ttCode)"><i class="material-icons delete-icon">delete</i></a>
+    </li>
+</ul>
+<div class="row">
+  <div class="col s12 l6 offset-l6 right-align">
+    Sub Total : {{this.totalAmount | currency}}<br>
+    HST(13%)  : {{this.tax | currency}} <br>
+    Final Total: {{this.result | currency}}
+
+  </div>
+
+  <div class="row">
+      <div class="col s12 ">
+          <a class="waves-effect waves-light btn-large red darken-3 right" [routerLink]="['/confirmation']" routerLinkActive="router-link-active" ><i class="material-icons right">send</i>Yes, Place Order!</a>
+      </div>
+</div>

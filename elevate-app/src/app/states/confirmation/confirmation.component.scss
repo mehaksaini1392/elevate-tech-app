@@ -1,0 +1,62 @@
+.tv{
+    background-image: url('https://www.trzcacak.rs/myfile/full/8-84001_monitor-png-image-television-with-blank-screen.png');
+    background-size: cover;
+    height: 516px;
+    width: 47%;
+    padding: 35px;
+    @media screen and (max-width: 768px) {
+        padding: 65px;
+        padding-top: 80px;
+        background-image: url('https://airjordanenligen2015.com/images/tablet-clipart-ipad-frame-12.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 557px;
+        .s3{
+            width: 50%;
+        }
+        .tile{
+            height: 90px;
+        }
+      }
+}
+
+.headerTitle{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.headerDesc{
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+}
+
+.banner{
+    background: #49515238;
+    .orderNum{
+        text-align: center;
+        color: darkblue;
+        font-size: 18px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+
+.tile{
+    height: 110px;
+    display: inline-block;
+    img{
+        height: 80%;
+        width: 80%;
+    }
+}
+
