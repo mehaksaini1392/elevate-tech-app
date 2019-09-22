@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { ReviewOrderComponent } from './review-order/review-order.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     AppRoutingModule
   ],

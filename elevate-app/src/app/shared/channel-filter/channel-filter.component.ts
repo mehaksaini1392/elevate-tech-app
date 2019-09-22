@@ -1,74 +1,53 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import * as M from "materialize-css";
 @Component({
   selector: 'app-channel-filter',
   templateUrl: './channel-filter.component.html',
   styleUrls: ['./channel-filter.component.scss']
 })
-export class ChannelFilterComponent implements OnInit {
-  items = [{ //test sample data
-    "id": 1,
-    "name": "YTV",
-    "completed": false,
-    "genre": "Family",
-    "lng": "French"
-  },
-  {
-    "id": 2,
-    "name": "RAI italia",
-    "completed": false,
-    "genre": "Kids",
-    "lng": "Eng"
-  },
-  {
-    "id": 3,
-    "name": "RAI italia",
-    "completed": false,
-    "genre": "Multicultural",
-    "lng": "Italian"
-  },
-  {
-    "id": 4,
-    "name": "CP24",
-    "completed": false,
-    "genre": "News",
-    "lng": "Eng"
-  },
-  {
-    "id": 5,
-    "name": "TVA",
-    "completed": false,
-    "genre": "Multicultural",
-    "lng": "French"
-  },
-  {
-    "id": 6,
-    "name": "ESPN Classic Canada",
-    "completed": false,
-    "genre": "Sports",
-    "lng": "English"
-  },
-  {
-    "id": 7,
-    "name": "Movie Time",
-    "completed": false,
-    "genre": "Movies",
-    "lng": "English"
+export class ChannelFilterComponent implements OnInit, AfterViewInit {
+  ngAfterViewInit(): void {
+    var elems = document.getElementById('genreSelect');
+    var instances = M.FormSelect.init(elems);
   }
-  ];
+  @Input() generesList;
+  @Input() langList;
+  @Output() language = new EventEmitter();
+  @Output() genre = new EventEmitter();
+  
   display = false;
 
   constructor() {
   }
-
+    iniateLangSelectBox(){
+      var elems = document.getElementById('langSelect');
+      var instances1 = M.FormSelect.init(elems);
+    }
   ngOnInit() {
+    console.log(this.generesList);
   }
 
   onChangeGenre(value) {
-    (value === 'Multicultural') ? this.display = true : this.display = false;
+    if (value === 'Multicultural') {
+      this.display = true;
+      setTimeout(() => {
+        this.iniateLangSelectBox();
+      }, 100);
+       
+     // this.onChangeLang('en')
+    } else {
+      this.display = false;
+    }
+    this.genre.emit(value);
+
+  }
+
+  onChangeLang(value) {
+    this.language.emit(value);
+    this.display = true
   }
 
 }
