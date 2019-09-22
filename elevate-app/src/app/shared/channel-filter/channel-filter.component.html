@@ -1,0 +1,18 @@
+<div class="row">
+        <div class="col s8">
+            <select class="browser-default custom-select" (change)="onChangeGenre($event.target.value)">
+                <option *ngFor="let item of items" [ngValue]="item">
+                    {{ item.genre}}
+                  </option>
+              </select>
+            <br><br>
+        </div>
+        <div class="col s4" *ngIf="display">
+            <select class="browser-default custom-select">
+                <option *ngFor="let item of items" [ngValue]="item">
+                    {{ item.lng}}
+                  </option>
+              </select>
+            <br><br>
+        </div>
+</div>

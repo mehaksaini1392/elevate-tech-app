@@ -1,0 +1,13 @@
+
+<div class="row banner">
+  <p class="headerTitle">Congratulations on your MyChoice customized entertainment package!</p>
+  <p class="orderNum">Order #: 8A776NHG78</p>
+</div>
+<p class="headerDesc">Sit back, relax, and get comfy to gain the experience of a lifetime.</p>
+
+    <div class="row tv">
+        <div class="tile col s3" *ngFor="let channelData of customizedPackage"> 
+          <img src="assets/images/logos/{{channelData.ttCode+'.png'}}">
+        </div>
+      </div>
+

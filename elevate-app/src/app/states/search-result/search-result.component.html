@@ -1,0 +1,8 @@
+<app-search-box (searchResult)="searchResult($event)"></app-search-box>
+<div class="row">
+  <div *ngFor="let channel of allChannels" class="col s12 m4 l3">
+      <app-channel-tile (cardTitleEmit)="receiveData($event)" [channelData]="channel"></app-channel-tile>
+  </div>
+</div>
+<app-modal [channelData]="channelDataForModal" ></app-modal>
+
