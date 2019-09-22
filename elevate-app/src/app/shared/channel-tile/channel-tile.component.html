@@ -9,7 +9,10 @@
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">{{channelName}}<i class="material-icons right">more_vert</i></span>
-    <p><a data-target="channelInfoModal" class="modal-trigger" (click)="emitModalData()"> More Detail <i class="material-icons ">open_in_new</i> </a></p>
+    <strong>Price: {{channelData?.channelPrice | currency}}</strong>
+      <a data-target="channelInfoModal" class="modal-trigger right" (click)="emitModalData()">
+         <span class="more-detail">More Detail</span> <i class="material-icons ">open_in_new</i> </a>
+
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">{{channelData?.name}}<i class="material-icons right">close</i></span>
