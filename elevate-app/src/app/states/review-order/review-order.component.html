@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
-    <form class="col s12 l6">
+    <div class="col s12 l6">
       <h4>Personal Information</h4>
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="firstName" type="text" class="validate" />
+          <input id="firstName" [(ngModel)]="firstName"  type="text" class="validate" />
           <label for="firstName">First Name</label>
         </div>
         <div class="input-field col s6">
@@ -40,7 +40,7 @@
           <label for="telephone">Telephone</label>
         </div>
       </div>
-    </form>
+    </div>
 
     <div class="col s12 l6">
       <h4>Review Your Order</h4>
@@ -104,8 +104,8 @@
     <div class="col s12 ">
       <a
         class="waves-effect waves-light btn-large red darken-3 right"
-        [routerLink]="['/confirmation']"
-        routerLinkActive="router-link-active"
+        [routerLink]="['/confirmation']" 
+        routerLinkActive="router-link-active" (click)="submitForm()"
         ><i class="material-icons right">send</i>Yes, Place Order!</a
       >
     </div>

@@ -14,6 +14,7 @@ export class ReviewOrderComponent implements OnInit {
   totalAmount = 0;
   tax = 0;
   result = 0;
+  firstName;
   ngOnInit() {
     this.selectedChannels = this.channelService.getShoppingCartItems();
     this.setTotalAmount();
@@ -33,5 +34,10 @@ export class ReviewOrderComponent implements OnInit {
 
     this.tax = this.totalAmount * 0.13;
     this.result = this.totalAmount * 1.13;
+  }
+
+  submitForm(){
+    console.log("firstName : "+this.firstName);
+    this.channelService.saveName(this.firstName);
   }
 }

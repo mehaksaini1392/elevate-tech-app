@@ -42,6 +42,8 @@
 
 .banner{
     background: #49515238;
+    text-align: center;
+    padding-top: 20px;
     .orderNum{
         text-align: center;
         color: darkblue;
@@ -58,5 +60,16 @@
         height: 80%;
         width: 80%;
     }
+}
+
+.firstName{
+    color: darkblue;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 0px;
+   padding-top: 15px;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
 }
 
