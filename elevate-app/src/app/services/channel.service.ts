@@ -10,7 +10,7 @@ import { Observable, Subject } from 'rxjs';
 export class ChannelService {
   private _allChannels: Channel[];
   private shoppingCart = [];
-
+  private name;
   private subject = new Subject<any>();
   constructor(
     private http: HttpClient
@@ -72,6 +72,12 @@ export class ChannelService {
     console.log(new Set(flattenGenreData));
      return uniquegenres;
    }
+  saveName(name){
+    this.name=name;
+  }
+  getName(){
+    return this.name;
+  }
 
    getAllLangugues(){
     let genres =  R.pluck('programLanguages')(this._allChannels);
