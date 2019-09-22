@@ -4,6 +4,7 @@ import { SearchResultComponent } from './states/search-result/search-result.comp
 import { AppComponent } from './app.component';
 import { ChannelsResolver } from './resolver/app.resolvers';
 import { ReviewOrderComponent } from './states/review-order/review-order.component';
+import { ConfirmationComponent } from './states/confirmation/confirmation.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'review-order',
     component: ReviewOrderComponent
+  },
+  {
+    path: 'confirmation',
+    component: ConfirmationComponent
   },
   {
     path: '',
