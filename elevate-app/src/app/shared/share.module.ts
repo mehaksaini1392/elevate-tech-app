@@ -5,6 +5,7 @@ import { ChannelTileComponent } from "./channel-tile/channel-tile.component";
 import { CommonModule } from "@angular/common";
 import { ModalComponent } from "./modal/modal.component";
 import { FormsModule } from '@angular/forms';
+import { ChannelFilterComponent } from './channel-filter/channel-filter.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     SearchBoxComponent,
     CarouselComponent,
     ChannelTileComponent,
-    ModalComponent
+    ModalComponent,
+    ChannelFilterComponent
   ],
   providers: []
 })
