@@ -1,0 +1,25 @@
+@import "../../../styles/variable";
+.nav-wrapper {
+  background: #1c1c1c;
+  .brand-logo {
+    img {
+      width: 200px;
+      top: 8px;
+      position: relative;
+      padding-left: 10px;
+    }
+  }
+}
+
+.shoppingCartItems {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+.display-none{
+  display:none;
+  }
+
+  .display-inline{
+    display:inline;
+    }

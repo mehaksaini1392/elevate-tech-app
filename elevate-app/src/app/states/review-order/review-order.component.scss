@@ -1,0 +1,23 @@
+.delete-icon{
+  color: red;
+  cursor: pointer;
+}
+.left-col{
+  position: relative;
+  padding-left: 60px;
+  font-weight: bold;
+  color: #1a1a1a8f;
+  img{
+    position: absolute;
+    width: 55px;
+    height: 90%;
+    top: 5%;
+    left: 0;
+  }
+}
+.align-right{
+  text-align: right;
+}
+.right-col{
+  text-align: right;
+}

@@ -1,0 +1,113 @@
+<div class="container">
+  <div class="row">
+    <form class="col s12 l6">
+      <h4>Personal Information</h4>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="firstName" type="text" class="validate" />
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="lastName" type="text" class="validate" />
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input id="address" type="text" class="validate" />
+          <label for="address">Address</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_city</i>
+          <input id="city" type="text" class="validate" />
+          <label for="city">City</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">gps_not_fixed</i>
+          <input id="province" type="text" class="validate" />
+          <label for="province">Province</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="telephone" type="tel" class="validate" />
+          <label for="telephone">Telephone</label>
+        </div>
+      </div>
+    </form>
+
+    <div class="col s12 l6">
+      <h4>Review Your Order</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th class="align-right">Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let item of selectedChannels">
+            <td class="left-col">
+              <img
+                src="assets/images/logos/{{ item?.ttCode + '.png' }}"
+                alt=""
+              />
+              <span class="title">{{ item?.name }}</span>
+            </td>
+            <td class="right-col">{{ item?.channelPrice | currency }}
+                <a
+                role="link"
+                class="secondary-content"
+                (click)="removeItem(item?.ttCode)"
+                ><i class="material-icons delete-icon">clear</i></a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td class="align-right">
+              Sub Total : {{ this.totalAmount | currency }}<br />
+              HST(13%) : {{ this.tax | currency }} <br />
+             <strong> Final Total: {{ this.result | currency }}</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let item of selectedChannels">
+          <img
+
+            src="assets/images/logos/{{ item?.ttCode + '.png' }}"
+            alt=""
+            class="circle"
+          />
+          <span class="title">{{ item?.name }}</span>
+          <p>Price: {{ item?.channelPrice | currency }}</p>
+          <a
+            role="link"
+            class="secondary-content"
+            (click)="removeItem(item?.ttCode)"
+            ><i class="material-icons delete-icon">delete</i></a
+          >
+        </li>
+      </ul> -->
+    </div>
+
+    <div class="col s12 ">
+      <a
+        class="waves-effect waves-light btn-large red darken-3 right"
+        [routerLink]="['/confirmation']"
+        routerLinkActive="router-link-active"
+        ><i class="material-icons right">send</i>Yes, Place Order!</a
+      >
+    </div>
+  </div>
+</div>

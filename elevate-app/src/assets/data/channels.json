@@ -1,0 +1,306 @@
+[
+  {
+    "ttCode": "TT_CP24",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "CP24",
+    "genre": ["News"],
+    "description": "We're CP24 - Canada's first and only 24-hour local news channel. Simultaneous with a \"regular\", full-motion newscast, CP24 screens perpetually update \"information at a glance\", showing the date, time, immediate weather conditions, the day's forecast, a \"Four-Day\" synopsis, current traffic flow from 118 Live highway cams, newswire headlines, a sports ticker, stock market quotes and the status of key exchange indices.",
+    "channelType": ["HD"],
+    "isSVOD": false,
+    "programLanguages": ["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=mQdpIlnIWZc",
+    "topTVShows":[
+      {
+        "name":"Breakfast Television",
+        "image":"https://www.bellmedia.ca/wp-content/uploads/2019/03/Breakfast-768x1024.png"
+      },
+      {
+        "name":"Hot Property",
+        "image":"https://streaming-engine-assets.rftslb.com/posters/image/image/305454/list_page_p11710310_b_v9_ac.jpg"
+      },
+      {
+        "name":"e Talk",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/191965/p191965_b_v8_ad.jpg"
+      }
+    ]
+  },
+  {
+    "ttCode": "TT_YTV",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "YTV",
+    "genre": ["Family", "Kids"],
+    "description": "If a show is awesome-er than bubble wrap and more captivating than cat videos - chances are it's on YTV! Featuring hilarious animated comedies, blockbuster movies, top-rated live action sitcoms and the #1 after- school  block, The Zone; YTV is the ultimate headquarters for kids and their families! Also available in HD and On Demand.",
+    "channelType": ["HD"],
+    "isSVOD": false,
+    "programLanguages": ["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=jkvoyEIFU2U",
+    "topTVShows":[ 
+    {
+      "name":"Rise of the Teenage Mutant Ninja Turtles",
+      "image":"https://assets.ytv.com/wp-content/uploads/2018/08/21092142/show_tile_teenagemutantninjaturtles_820x625.jpg"
+    },
+    {
+      "name":"Spongebob Squarepants",
+      "image":"https://assets.ytv.com/wp-content/uploads/2017/10/15121231/YTV_SB_Best_Year_Ever_Tile.jpg"
+    },
+    {
+      "name":"The Fairly OddParents",
+      "image":"http://www.gstatic.com/tv/thumb/tvbanners/12434414/p12434414_b_v8_ab.jpg"
+    },
+    {
+      "name":"The Loud House",
+      "image":"https://assets.corusent.com/wp-content/uploads/2016/06/Loud-House-YTV.jpg"
+    },
+    {
+      "name":"Henry Danger",
+      "image":"https://nick-intl.mtvnimages.com/uri/mgid:file:gsp:kids-assets:/nick/properties/henry-danger/season-4/Henry-Danger-S4-show-cover.jpg?quality=0.75&height=0&width=480&matte=true&crop=false"
+    },
+    {
+      "name":"The Zone",
+      "image":"https://assets.ytv.com/wp-content/uploads/2017/12/03115228/YTV_The_Zone_Tile_2019_NEW_v2.jpg"
+    },
+    {
+      "name":"Go Away, Unicorn!",
+      "image":"http://www.gstatic.com/tv/thumb/tvbanners/15842701/p15842701_b_v8_ac.jpg"
+    }]
+  },
+  {
+    "ttCode": "TT_ESPN_Classic_Canada",
+    "channelPrice": 4,
+    "isTBS": false,
+    "name": "ESPN Classic Canada",
+    "genre": ["Sports"],
+    "description": "ESPN Classic has encore broadcasts of the most cherished moments from the world of sports, including baseball, basketball, hockey, football, golf, boxing, soccer, Reel Classics movies and more.",
+    "channelType": ["SD"],
+    "isSVOD": false,
+    "programLanguages": ["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=TyJt0AX36MQ",
+    "topTVShows":[
+    {
+      "name":"First Take",
+      "image":"https://a.espncdn.com/i/espnradio/podcast/first_take/first_take_1x1.jpg?w=3000&h=3000"
+    },
+    {
+      "name":"Monday Night Football",
+      "image":"https://www.multichannel.com/.image/t_share/MTU0MDYzODU3MzE2MjA5NzQ2/espn-mnf-logojpg.jpg"
+    },
+    {
+      "name":"Pardon the Interruption",
+      "image":"http://www.gstatic.com/tv/thumb/tvbanners/186288/p186288_b_v8_ad.jpg"
+    }]
+  },
+  {
+    "ttCode": "TT_Movietime",
+    "channelPrice": 4,
+    "isTBS": false,
+    "name": "MovieTime",
+    "genre": ["Movies"],
+    "description": "Movie time is the ultimate digital channel destination for big-ticket movies seven days a week. With over 250 movie titles each month and back to back movies on the weekend, MovieTime offers movie lovers unparalleled access to an extensive collection of favourite hits. From adventure-packed blockbusters to definitive movie moments, MovieTime has a star-studded, jam-packed line up that satisfies viewers craving for hit movies.",
+    "channelType": ["HD"],
+    "isSVOD": false,
+    "programLanguages": ["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=A7hkvdyG8x4",
+    "topTVShows":[
+      {
+        "name":"Sweet November",
+        "image":"http://www.gstatic.com/tv/thumb/v22vodart/27108/p27108_v_v8_aa.jpg"
+      },
+      {
+        "name":"Under Fire",
+        "image":"http://www.gstatic.com/tv/thumb/v22vodart/7594/p7594_v_v8_aa.jpg"
+      },
+      {
+        "name":"The Danish Girl",
+        "image":"https://m.media-amazon.com/images/M/MV5BMjA0NjA4NjE2Nl5BMl5BanBnXkFtZTgwNzIxNTY2NjE@._V1_.jpg"
+      }
+    ]
+  },
+  {
+    "ttCode": "TT_RAI_italia_14",
+    "channelPrice": 5.99,
+    "isTBS": false,
+    "name": "RAI italia",
+    "genre": ["Multicultural"],
+    "description": "RAI italia provides 24 hours of top-quality entertainment every day, live from Italy. Enjoy hours of Italian and European soccer, live news, mini-series, movies, children's cartoons and much more.<br><br>Must be ordered with TLN to satisfy CRTC linkage requirements.",
+    "channelType": ["HD"],
+    "isSVOD": false,
+    "programLanguages": ["it"],
+    "teaserVideo":"https://www.youtube.com/watch?v=H2Fh_rkeJUg",
+    "topTVShows":[
+      {
+        "name":"Reazione A Catena",
+        "image":"https://www.studiogiochi.com/files/studiogiochi.com/2019/06/RAC-2019.jpg"
+      },
+      {
+        "name":"L'Italia con voi",
+        "image":"https://pbs.twimg.com/media/DoC4paoXgAUNbTL.jpg"
+      },
+      {
+        "name":"Tutta Salute",
+        "image":"https://i2.wp.com/www.la-notizia.net/wp-content/uploads/2019/04/TUTTA-Salute.jpg?fit=930%2C610&ssl=1"
+      }
+    ]
+  },
+  {
+    "ttCode": "TT_PTC_Punjabi_Canada",
+    "channelPrice": 5,
+    "isTBS": false,
+    "name": "PTC Punjabi Canada",
+    "genre": "Multicultural",
+    "description": "PTC Punjabi Canada is a premium quality Punjabi television channel with high caliber Punjabi programs including religious, entertainment, breaking news, current affairs, music and live mega events from Punjab and local programs from Canada. Rated as the #1 Punjabi channel today, PTC Punjabi is a household name in Punjab (India), the U.S., and other parts of the world, connecting viewers to Punjab and the Punjabi community worldwide.",
+    "channelType": ["SD"],
+    "isSVOD": false,
+    "programLanguages": ["pa"],
+    "teaserVideo":"https://www.youtube.com/watch?v=0ARRGIpMtpE",
+    "topTVShows":[
+      {
+        "name":"Punjab De SuperChef",
+        "image":"https://www.studiogiochi.com/files/studiogiochi.com/2019/06/RAC-2019.jpg"
+      },
+      {
+        "name":"Vichar Taqrar",
+        "image":"hhttp://imagesyupptv.whatsonindia.com/dasimages/landscape/360x270/D2423551FF183A0D7FAA636DF7DC2C0C5AF0E78AK.jpg"
+      },
+      {
+        "name":"IKK Kahaani",
+        "image":"hhttp://imagesyupptv.whatsonindia.com/dasimages/landscape/360x270/D2423551FF183A0D7FAA636DF7DC2C0C5AF0E78AK.jpg"
+      }
+    ]
+  },
+  {
+    "ttCode": "TT_Much",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "Much",
+    "genre": ["Music"],
+    "description": "MuchMusic is dedicated to music-related programs, pop and youth culture.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=i6dWSHTrNkA",
+    "topTVShows":[
+      {"name":"South Park",
+        "image": "https://www.much.com/wp-content/uploads/2015/05/featured-south-park1-770x433.jpg"
+        },
+        {
+        "name":"South Side",
+        "image":"https://www.much.com/wp-content/uploads/2019/07/SouthSide-feat-768x432.jpg"
+        },
+        {
+        "name":"American Dad",
+        "image":"https://www.much.com/wp-content/uploads/2016/01/3AmericanDad_09_v1F-1450x816.jpg"
+        },
+        {
+        "name":"Simpsons",
+        "image":"https://www.much.com/wp-content/uploads/2015/05/featured-thesimpsons-479x269.jpg"
+        },
+        {
+        "name":"Chappelle's Show",
+        "image":"https://www.much.com/wp-content/uploads/2019/04/ChappelleShow-header-479x269.jpg"
+        }
+    ]
+  },
+  {
+    "ttCode": "TT_CNN_Cable_News_Network",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "CNN",
+    "genre": ["News"],
+    "description": "CNN delivers the latest breaking news and information on the latest top stories, weather, business, entertainment, politics, and more.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=MnR9AVs6Q_c",
+    "topTVShows":[
+      {
+        "name":"Cuomo Prime Time",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/14495044/p14495044_b_v8_ad.jpg"
+      },
+      {
+        "name":"United Shades of America",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/16796390/p16796390_b_v8_aa.jpg"
+      },
+      {
+        "name":"Inside Politics",
+        "image":"http://static.tvgcdn.net/feed/1/177/115080177.jpg"
+      }
+    ]
+  },
+  {
+    "ttCode": "TT_Food_Network",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "Food Network",
+    "genre": ["Lifestyle"],
+    "description": "Food Network brings iconic characters together through inspiring food stories. From engaging, passionate chefs to dramatic culinary competitions and behind the scenes access to the food industry, Food Network serves up an appetizing schedule of programs from Canada and around the world.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=s7VvEftvRwM",
+    "topTVShows":[
+      {"name":"Chopped",
+      "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/24/0/CQ4009_Judges_s4x3.jpg.rend.hgtvcom.476.357.suffix/1537821061129.jpeg"
+      },
+      {
+      "name":"Diners, Drive-Ins and Dives",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/21/0/DV2818_wings.jpg.rend.hgtvcom.476.357.suffix/1537798591284.jpeg"
+      },
+      {
+      "name":"Guy's Grocery Games",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/6/28/GK2012_contestants.jpg.rend.hgtvcom.476.357.suffix/1561993559786.jpeg"
+      },
+      {
+      "name":"The Pioneer Woman",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/2/0/WU2110_Ree-Drummond.jpg.rend.hgtvcom.406.305.suffix/1554749573599.jpeg"
+      },
+      {
+      "name":"Good Eats",
+      "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/5/17/0/AXON_Alton-Brown-Good-Eats-02-Horz_s4x3.jpg.rend.hgtvcom.266.200.suffix/1371615990804.jpeg"
+      }]
+  },
+  {
+    "ttCode": "TT_CTV_News_Channel",
+    "channelPrice": 7,
+    "isTBS": false,
+    "name": "CTV News Channel",
+    "genre": ["News"],
+    "description": "CTV News Channel HD broadcasts news headlines, breaking news, and information on a 24 hour schedule.",
+    "channelType": [
+      "HD"
+    ],
+    "isSVOD": false,
+    "programLanguages":["en"],
+    "teaserVideo":"https://www.youtube.com/watch?v=vRmn09obTG8",
+    "topTVShows":[
+      {
+        "name":"National News",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/7988878/p7988878_b_v8_ad.jpg"
+      },
+      {
+        "name":"The Social",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/10115884/p10115884_b_v8_ac.jpg"
+      },
+      {
+        "name":"The Marilyn Denis Show",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/17352407/p17352407_b_v8_aa.jpg"
+      },
+      {
+        "name":"MasterChef Canada",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/16691871/p16691871_b_v8_aa.jpg"
+      },
+      {
+        "name":"The Amazing Race Canada",
+        "image":"http://www.gstatic.com/tv/thumb/tvbanners/17036513/p17036513_b_v8_aa.jpg"
+      }
+    ]
+  
+  }
+]
