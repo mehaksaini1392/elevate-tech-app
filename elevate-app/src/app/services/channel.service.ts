@@ -3,13 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { Channel } from '../models/channel.model';
 import * as R from 'ramda';
-
+import { Observable, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class ChannelService {
   private _allChannels: Channel[];
   private shoppingCart = [];
+
+  private subject = new Subject<any>();
   constructor(
     private http: HttpClient
 
@@ -37,11 +39,27 @@ export class ChannelService {
   addChannelToCart(channelId) {
     const channelObj = R.find(R.propEq('ttCode', channelId))(this._allChannels);
     this.shoppingCart.push(channelObj);
+    this.sendMessage(this.shoppingCart.length)
   }
 
   removeChannelFromCart(channelId) {
     const indexToRemove = R.findIndex(R.propEq('ttCode', channelId))(this.shoppingCart);
     this.shoppingCart.splice(indexToRemove, 1);
+    this.sendMessage(this.shoppingCart.length)
+  }
+
+  getItemsCount(){
+    return this.shoppingCart.length;
+  }
+
+  sendMessage(message: any) {
+    this.subject.next({ count: message });
+  }
+  clearMessage() {
+    this.subject.next();
+  }
+  getMessage(): Observable<any> {
+    return this.subject.asObservable();
   }
 
 }
